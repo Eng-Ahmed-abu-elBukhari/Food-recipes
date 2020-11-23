@@ -1,0 +1,63 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="area_entries">
+        <item>American</item>
+        <item>British</item>
+        <item>Indian</item>
+        <item>Mexican</item>
+        <item>Russian</item>
+        <item>French</item>
+        <item>Canadian</item>
+        <item>Egyptian</item>
+        <item>Jamaican</item>
+        <item>Chinese</item>
+        <item>Italian</item>
+        <item>Dutch</item>
+        <item>Vietnamese</item>
+        <item>Polish</item>
+        <item>Japanese</item>
+        <item>Moroccan</item>
+        <item>Tunisian</item>
+        <item>Irish</item>
+        <item>Greek</item>
+        <item>Spanish</item>
+        <item>Kenyan</item>
+        <item>Thai</item>
+        <item>Malaysian</item>
+        <item>Tunisian</item>
+    </string-array>
+
+
+
+
+
+
+
+    <string-array name="area_values">
+
+        <item>American</item>
+        <item>British</item>
+        <item>Indian</item>
+        <item>Mexican</item>
+        <item>Russian</item>
+        <item>French</item>
+        <item>Canadian</item>
+        <item>Egyptian</item>
+        <item>Jamaican</item>
+        <item>Chinese</item>
+        <item>Italian</item>
+        <item>Dutch</item>
+        <item>Vietnamese</item>
+        <item>Polish</item>
+        <item>Japanese</item>
+        <item>Moroccan</item>
+        <item>Tunisian</item>
+        <item>Irish</item>
+        <item>Greek</item>
+        <item>Spanish</item>
+        <item>Kenyan</item>
+        <item>Thai</item>
+        <item>Malaysian</item>
+        <item>Tunisian</item>
+    </string-array>
+</resources>

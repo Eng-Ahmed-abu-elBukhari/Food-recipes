@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Food Recipes</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Search Area</string>
+    <string name="search_meal_area">Default Search Area</string>
+    <string name="image_description">this image for last meal</string>
+
+
+
+
+    <!--SearchFragment-->
+    <string name="search_suggestion_hint">Search meal</string>
+    <string name="search_suggestion_title_yesterday">YESTERDAY</string>
+    <string name="search_suggestion_title_this_week">THIS WEEK</string>
+
+
+
+
+
+    <string name="search_your_recipes">Search Your Recipes…</string>
+    <string name="meal_categories">Meal Categories</string>
+    <string name="category">Category</string>
+    <string name="country">Country</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="dot_loading">...</string>
+    <string name="Ingredients">INGREDIENTS</string>
+    <string name="youtube">YOUTUBE</string>
+    <string name="source">SOURCE</string>
+    <string name="favorite">Favorite</string>
+
+
+
+
+
+    <string name="version_text">version 1.0</string>
+    <string name="developed_by">Developed By :Eng Ahmed Bukhari</string>
+</resources>

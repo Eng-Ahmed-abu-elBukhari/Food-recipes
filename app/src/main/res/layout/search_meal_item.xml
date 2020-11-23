@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="lastMeal"
+            type="com.roaa.ahmed_abu_elbukhari.data.model.meal_by_category.MealObject" />
+        <variable
+            name="clickListener"
+            type="com.roaa.ahmed_abu_elbukhari.ui.adapter.SearchMealAdapter.SearchMealListener"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/search_cardView"
+        android:transitionName="shared_element_container_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{ ()-> clickListener.onClick(lastMeal)}"
+        >
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/lastMeal_Image"
+                android:meal_image="@{lastMeal}"
+                tools:src="@drawable/bg_1" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                tools:text="meal app category "
+                android:meal_name="@{lastMeal}"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

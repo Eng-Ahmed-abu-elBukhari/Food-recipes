@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.roaa.ahmed_abu_elbukhari.ui.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="@string/app_name"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.roaa.ahmed_abu_elbukhari.ui.fragment.SearchFragment"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.roaa.ahmed_abu_elbukhari.ui.fragment.SettingsFragment"
+       android:label="Setting"
+        />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.roaa.ahmed_abu_elbukhari.ui.fragment.CategoryFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_category" >
+    
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="image_url"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.roaa.ahmed_abu_elbukhari.ui.fragment.DetailsFragment"
+        android:label="Details" >
+        <argument
+            android:name="meal_name"
+            app:argType="string" />
+    </fragment>
+</navigation>

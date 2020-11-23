@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="mealCategory"
+            type="com.roaa.ahmed_abu_elbukhari.data.model.meal_category.MealCategoryObject" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/home_cardView_Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        android:transitionName="shared_element_container"
+        app:cardElevation="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/categoryThumb"
+                android:scaleType="centerInside"
+                android:padding="5dp"
+                android:loadCategoryImage="@{mealCategory}"
+                tools:src="@drawable/sample_image_category"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+            <TextView
+                tools:text="Category"
+                android:gravity="center"
+                android:id="@+id/categoryName"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:category_name="@{mealCategory}"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
